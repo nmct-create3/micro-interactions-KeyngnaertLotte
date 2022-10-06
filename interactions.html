@@ -18,6 +18,8 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/screen.css">
+
+    <script src="script/app.js"></script>
 </head>
 
 <body>
@@ -53,10 +55,10 @@
                                 <input class="c-input" type="password"
                                        name="password" id="password" required>
                                 <span class="c-toggle-password">
-                                    <input class="c-toggle-password__checkbox"
+                                    <input class="c-toggle-password__checkbox o-hide-accessible "
                                            type="checkbox" id="togglePassword">
                                     <label class="c-toggle-password__label"
-                                           for="togglePassword">
+                                           for="togglePassword"  onclick="handlePasswordSwitcher()">
                                         <svg class="c-toggle-password__icon c-toggle-password__icon--hide"
                                              xmlns="http://www.w3.org/2000/svg"
                                              viewBox="0 0 20 20">
