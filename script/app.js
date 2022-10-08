@@ -170,7 +170,33 @@ const isEmpty = function(fieldValue) {
 };
 
 function handleFloatingLabel() {
-   
+   const emailInput = document.querySelector(".js-email-input");
+   const emailLabel = document.querySelector(".js-email-label");
+
+   const passInput = document.querySelector(".js-password-input");
+   const passLabel = document.querySelector(".js-password-label");
+
+   emailInput.addEventListener('blur', function(){
+
+    if (emailInput.value != "" && emailLabel.classList.contains("is-floating") == false){
+      emailLabel.className += " is-floating"
+    }
+    else if(emailInput.value == "" && emailLabel.classList.contains("is-floating")){
+        emailLabel.classList.remove("is-floating")
+        console.log("byeee")
+    }
+   })
+
+   passInput.addEventListener('blur', function(){
+
+    if (passInput.value != "" && passLabel.classList.contains("is-floating") == false){
+      passLabel.className += " is-floating"
+    }
+    else if(passInput.value == "" && passLabel.classList.contains("is-floating")){
+      passLabel.classList.remove("is-floating")
+        console.log("byeee")
+    }
+   })
 }
 
 
@@ -195,7 +221,7 @@ function handlePasswordSwitcher() {
 document.addEventListener('DOMContentLoaded', function () {
     console.log('Script loaded!');
     handleFloatingLabel();
-    getDOMElements();
+    //getDOMElements();
     //handlePasswordSwitcher();
 });
 
