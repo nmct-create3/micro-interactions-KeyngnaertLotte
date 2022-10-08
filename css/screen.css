@@ -1033,6 +1033,39 @@ more padding on the right to avoid overlap
 
 }
 
+/*
+    Component: Heart Toggle
+    ---
+    Heart toggle custom checkbox
+*/
+
+.c-toggle-heart__checkbox:checked + .c-toggle-heart__label .c-toggle-heart__icon{
+    fill: #D80027;
+    scale: 120%;
+    rotate: 360deg;
+    transition: 600ms ease-in-out; 
+}
+
+.c-toggle-heart{
+    position: relative;
+    height: 20px;
+    width: 24px;
+    z-index: 100;
+}
+
+.c-toggle-heart__label{
+    cursor: pointer;
+}
+
+.c-toggle-heart__icon{
+    display: block;
+    height: 24px;
+    fill: var(--global-color-neutral-x-light);
+    rotate: 0;
+    transition: 600ms ease-in-out; 
+}
+
+
 
 /*------------------------------------*\
 #UTILITIES
