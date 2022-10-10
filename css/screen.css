@@ -1066,6 +1066,96 @@ more padding on the right to avoid overlap
 }
 
 
+/*
+    Component: Tent cards
+    ---
+*/
+
+.c-tent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a.c-tent{
+    text-decoration: none;
+    color: var(--global-color-neutral);
+    margin: 0;
+}
+
+h2.c-tent__title{
+    font-size: larger;
+    color: var(--global-color-neutral-xxxx-dark);
+    margin: 0;
+}
+
+.c-tent__action{
+    color: #3385FF;
+    background-color: var(--global-color-neutral-xxxx-light);
+    display: none;
+    height: 0;
+}
+
+.c-tent:hover .c-tent__action{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    transition:  ease-out;
+    transform: scale(0, 1);
+}
+
+.c-tent:hover .c-tent__content{
+    padding-top: 34px;
+    padding-bottom: 0px;
+}
+
+.c-icon__path--color-1{
+    fill: var(--global-color-alpha-x-transparent);
+}
+
+.c-icon__path--color-2{
+    fill: var(--global-color-alpha-dark);
+}
+
+.c-tent__icon-wrapper{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    position: absolute;
+    top: 24%;
+    padding: 15px;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px;
+}
+
+.c-tent:hover .c-icon{
+    width: 35px;
+    transition: 0.2s ease-out;
+}
+
+.c-icon{
+    width: 45px;
+}
+
+.c-tent__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-tent__content{
+    padding: 45px;
+}
+
+.c-tent__body{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+
+
 
 /*------------------------------------*\
 #UTILITIES
